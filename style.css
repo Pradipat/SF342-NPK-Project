@@ -4,9 +4,17 @@
     padding: 0;
 }
 .container{
+    height: 2000px;
+    justify-content: center;
     background-color: rgb(255, 255, 255);
 }
+.menu{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
 .menu-container{
+    width: 100%;
     border-bottom: 1px solid rgb(0, 0, 0 , 0.5) ;
     min-height: 80px;
     display: flex;
@@ -17,7 +25,21 @@
     font-weight: bold;
 }
 .opened-menu-container{
+    position: fixed;
     background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.opened-menu-container div{
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .menu-hidden {
     display: none;
@@ -28,25 +50,35 @@
 }
 
 
+
+.card-container{
+    padding-top: 120px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
 .veg-card img{
-    height: 80%;
-    width: 30%;
+    height: 100%;
+    width: 35%;
     object-fit: cover;
     border-radius: 20px;
+    margin-right: 20px;
 }
 .veg-card{
+    padding: 10px 20px 10px 20px;
     display: flex;
     align-items: center;
-    justify-content:center;
     border-radius: 20px;
     height: 124px;
     width: 381px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 .veg-card-content div:nth-child(1){
     font-size: 20px;
     font-weight: bold;
-    text-decoration: dashed;
+    text-decoration:underline;
 }
 .veg-card-content div:nth-child(2){
     font-size: 16px;
@@ -56,4 +88,23 @@
     font-size: 14px;
     font-weight: normal;
     color: #686868;
+}
+.veg-card-content div{
+    margin-bottom: 10px;
+}
+.add-card-bottom{
+    right: 15px;
+    bottom: 15px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 67px;
+    height: 67px;
+    background-color: #2E488B;
+    border-radius: 100%;
+}
+.add-card-bottom .fa-solid{
+    color: white;
+    font-size: 45px;
 }
