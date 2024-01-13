@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+}
+.menu-container{
+    border-bottom: 1px solid rgb(0, 0, 0 , 0.5) ;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.opened-menu-container{
+    background-color: rgb(255, 255, 255);
+}
+.menu-hidden {
+    display: none;
+}
+
+.menu-visible {
+    display: block;
+}
+
+
+.veg-card img{
+    height: 80%;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.veg-card{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 20px;
+    height: 124px;
+    width: 381px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.veg-card-content div:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: dashed;
+}
+.veg-card-content div:nth-child(2){
+    font-size: 16px;
+    font-weight:normal;
+}
+.veg-card-content div:nth-child(3){
+    font-size: 14px;
+    font-weight: normal;
+    color: #686868;
+}
