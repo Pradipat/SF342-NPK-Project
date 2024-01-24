@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="/style/vegCompare.css">
+    <link rel="stylesheet" href="style/setting.css">
+</head>
+<body>
+    <!-- header------------------ -->
+    <div class="menu">
+        <div class="menu-container">
+            <i class="fa-solid fa-chevron-left"   ></i>
+            <span>ผลลัพธ์</span>
+            <div class="menu-buttom"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="opened-menu-container menu-hidden">
+            <div>หน้าหลัก</div>
+            <div>ตรวจสอบประวัติ</div>
+            <div>การเชื่อมต่อ</div>
+        </div>
+    </div>
+    <!-- header------------------ -->
+
+    <div class="setting-container-page">
+        <div class="setting-detail setting-box">
+            <img class="setting-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ673V92kDN4gI8c1INUMAHZAYwBYoxp4zPgQ&usqp=CAU" alt="">
+            <div class="setting-text-detail">
+                <div><span class="veg-name title">ชื่อแปลง :</span> <input class="setting-text-box" type="text" name="nameInput" value="แปลงผัก001"></div>
+                <div class="dropdown-detail">
+                    <div class="dropdown-topic"><span class="title">ช่วงการปลูก </span><span> : </span></div>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown('veg')" class="dropbtn">เริ่มต้นการปลูก <i class="fa-solid fa-angle-down"></i></button>
+                        <div id="veg" class="dropdown-content">
+                            <a href="#">Item 1</a>
+                            <a href="#">Item 2</a>
+                            <a href="#">Item 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="setting-box">
+            <div class="dropdown-detail">
+                <div class="dropdown-topic"><span class="title">อุปกรณ์ </span></div>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('sensor')" class="dropbtn">เริ่มต้นการปลูก <i class="fa-solid fa-angle-down"></i></button>
+                    <div id="sensor" class="dropdown-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                        <a href="#">Item 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown-detail setting-box">
+            <span class="title">ตรวจอัตโนมัติ</span>
+            <label class="slider-container">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="setting-box">
+            <div class="dropdown-detail">
+                <div class="dropdown-topic"><span class="title">ตรวจทุกๆ (day) </span></div>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown('checkTime')" class="dropbtn">เริ่มต้นการปลูก <i class="fa-solid fa-angle-down"></i></button>
+                    <div id="checkTime" class="dropdown-content">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                        <a href="#">Item 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="check-buttom"><span>ตรวจสอบค่า</span></div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/a393f06aba.js" crossorigin="anonymous"></script>
+</body>
+</html>

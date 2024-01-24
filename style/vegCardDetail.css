@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+.veg-container{
+    font-size: 18px;
+    margin: 0 auto;
+    padding-top: 120px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.veg-container img{
+    width: 100%;
+    height:auto;
+    max-width: 363px;
+    margin-bottom: 20px;  
+}
+.title{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.veg-discript{
+    margin-bottom: 10px;
+}
+.veg-detail div span:nth-child(2){
+    padding-right: 50px;
+}
+.check-buttom{
+    display: flex;
+    align-items: center;
+    background-color: #2E488B;
+    border-radius: 30px;
+    width: 280px;
+    height: 53px;
+    margin-top: 20px;  
+}
+.check-buttom span{ 
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.time-descript{
+    margin-top: 20px;
+    font-size: 16px;
+    color: #898989;
+}

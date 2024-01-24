@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/vegCompare.css">
+    <link rel="stylesheet" href="style/vegCardDetail.css">
+    <link rel="stylesheet" href="/style/menu.css">
+</head>
+<body>
+    <!-- header------------------ -->
+    <div class="menu">
+        <div class="menu-container">
+            <i class="fa-solid fa-chevron-left"   ></i>
+            <span>ผลลัพธ์</span>
+            <div class="menu-buttom"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="opened-menu-container menu-hidden">
+            <div>หน้าหลัก</div>
+            <div>ตรวจสอบประวัติ</div>
+            <div>การเชื่อมต่อ</div>
+        </div>
+    </div>
+<!-- header------------------ -->
+
+    <div class="result-container">
+        <div class="result-detail"><span class="title">ประเภทผัก </span><span>: ผักคอส</span></div>
+        <div class="dropdown-detail">
+            <div class="dropdown-topic"><span class="title">ช่วงการปลูก </span><span> : </span></div>
+            <div class="dropdown">
+                <button onclick="toggleDropdown('plantTime')" class="dropbtn">เริ่มต้นการปลูก <i class="fa-solid fa-angle-down"></i></button>
+                <div id="plantTime" class="dropdown-content">
+                    <a href="#">Item 1</a>
+                    <a href="#">Item 2</a>
+                    <a href="#">Item 3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="show-npk-container">
+            <div class="result-card">
+                <div>N</div>
+                <div>Nitrogen</div>
+                <div class="result-circle">
+                    <span>201</span>
+                </div>
+            </div>
+            <div class="result-card">
+                <div>P</div>
+                <div>Phosphorus</div>
+                <div class="result-circle">
+                    <span>2.5</span>
+                </div>
+            </div>
+            <div class="result-card">
+                <div>K</div>
+                <div>Potassium</div>
+                <div class="result-circle">
+                    <span>50.1</span>
+                </div>
+            </div>
+        </div>
+
+        <table class="first-table">
+            <thead>
+                <tr>
+                    <th class="table-topic table-big-topic">ช่วงการปลูก</th>
+                    <th><span class="table-big-topic">N</span> (ppm)</th>
+                    <th><span class="table-big-topic">P</span> (ppm)</th>
+                    <th><span class="table-big-topic">K</span> (ppm)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-topic">เริ่มต้นการปลูก</td>
+                    <td>Row 1, Cell 2</td>
+                    <td>Row 1, Cell 3</td>
+                    <td>Row 1, Cell 4</td>
+                </tr>
+                <tr>
+                    <td class="table-topic">รากเจริญอยู่</td>
+                    <td>Row 2, Cell 2</td>
+                    <td>Row 2, Cell 3</td>
+                    <td>Row 2, Cell 4</td>
+                </tr>
+                <tr>
+                    <td class="table-topic">ติดดอกและเกสร</td>
+                    <td>Row 3, Cell 2</td>
+                    <td>Row 3, Cell 3</td>
+                    <td>Row 3, Cell 4</td>
+                </tr>
+                <tr>
+                    <td class="table-topic last-table-row">ระยะสุดท้าย</td>
+                    <td class="last-table-row">Row 5, Cell 2</td>
+                    <td class="last-table-row">Row 5, Cell 3</td>
+                    <td class="last-table-row">Row 5, Cell 4</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <table class="second-table">
+            <tbody>
+                <tr>
+                    <td class="table-topic last-table-row">Row 5, Cell 1</td>
+                    <td class="last-table-row">Row 5, Cell 2</td>
+                    <td class="last-table-row">Row 5, Cell 3</td>
+                    <td class="last-table-row">Row 5, Cell 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/a393f06aba.js" crossorigin="anonymous"></script>
+</body>
+</html>

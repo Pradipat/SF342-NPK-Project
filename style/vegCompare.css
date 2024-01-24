@@ -1,0 +1,122 @@
+.result-container{
+    width: 100%;
+    padding: 0 20px;
+    padding-top: 120px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.dropdown-topic{
+    display: inline-block;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropbtn {
+    background-color: #F9F9F9;
+    color: black;
+    height: 25px;
+    font-size: 14px;
+    border: 1px solid #DADADA ;
+    cursor: pointer;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.fa-angle-down{
+    color: #989898;
+    padding-left: 15px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.show {
+    display: block;
+}
+
+
+.result-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+.result-card div{
+    margin-bottom: 10px;
+}
+.result-card div:nth-child(1){
+    font-size: 18px;
+}
+.result-card div:nth-child(2){
+    font-size: 12px;
+    color: #898989;
+}
+.result-card div:nth-child(3){
+    font-size: 18px;
+    color: white;
+}
+.result-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E488B;
+    border-radius: 50%;
+    width: 61px;
+    height: 61px;
+}
+.show-npk-container{
+    display: flex;
+    justify-content: space-around;
+}
+.result-detail{
+    margin-bottom: 20px;
+}
+.dropdown-detail{
+    margin-bottom: 50px;
+}
+
+
+
+table {
+    font-size: 10px;
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 50px;
+    background-color: #F8F8F8; /* พื้นหลังเทา */
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+}
+th , td{
+    padding: 8px;
+    border-bottom: 1px solid #E1E1E1;
+    width: 90px;
+}
+.table-topic{
+    border-right: 1px solid #E1E1E1;
+    width: 110px;
+}
+.last-table-row{
+    border-bottom: 0px solid #E1E1E1;
+}
+.table-big-topic{
+    font-size: 12px;
+    font-weight: bold;
+}
+.second-table{
+    margin-top: 10px;
+}
